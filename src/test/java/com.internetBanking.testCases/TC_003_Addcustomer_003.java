@@ -2,6 +2,10 @@ package com.internetBanking.testCases;
 
 import com.internetBanking.PageObjects.AddCustomerPage;
 import com.internetBanking.PageObjects.LoginPage;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -53,6 +57,7 @@ public class TC_003_Addcustomer_003 extends BaseClass {
         if(result){
             Assert.assertTrue(true);
             logger.info("New Customer Registered Successfully!");
+
 
         }else {
             captureScreenshot(driver,"AddNewCustomer");
